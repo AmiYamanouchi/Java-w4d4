@@ -1,0 +1,18 @@
+package ca.inheritance.exercise;
+
+public class ReadingMaterial {
+
+	private String title;
+	private int numOfPages;
+	
+	
+	
+	public void setTitle(String title) {
+		if(!title.isEmpty() && !title.equalsIgnoreCase(null)) {
+			this.title= title;
+		} else {
+//			this.title = DEFAULT_STRING;
+		}
+	}
+
+}

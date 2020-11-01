@@ -1,0 +1,13 @@
+package ca.java.example;
+
+public class Cat extends Animal {
+
+	@Override
+	public void talk() {
+		System.out.println("I ama a cat i can talk like mao");
+		
+	}
+	
+	
+	
+}

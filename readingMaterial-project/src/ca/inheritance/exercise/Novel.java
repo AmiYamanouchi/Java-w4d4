@@ -1,0 +1,56 @@
+package ca.inheritance.exercise;
+
+public class Novel extends ReadingMaterial {
+
+	private String mainCharacterName;
+	private String theme;
+	public final String DEFAULT_STRING = "Unknown";
+
+	
+	public Novel(String title, int numOfPages, String mainCharacterName, String theme) {
+		super(title, numOfPages);
+		setMainCharacter(mainCharacterName);
+		setTheme(theme);
+	}
+	
+	public String getMainCharacter() {
+		return mainCharacterName;
+	}
+	
+	public String getTheme() {
+		return theme;
+	}
+	
+	public void setMainCharacter(String name) {
+		if (!name.isEmpty() && !name.equalsIgnoreCase(null)) {
+			this.mainCharacterName = name;
+		} else {
+			this.mainCharacterName = DEFAULT_STRING;
+		}
+	}
+	
+	public void setTheme(String theme) {
+		if (!theme.isEmpty() && !theme.equalsIgnoreCase(null)) {
+			this.theme = theme;
+		} else {
+			this.theme = DEFAULT_STRING;
+		}
+	}
+	
+	@Override 
+	public String toString() {
+		return super.toString() + "\nThe Name of Main Character : " + 
+				mainCharacterName + "\nTheme : " + theme;
+				
+ 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
